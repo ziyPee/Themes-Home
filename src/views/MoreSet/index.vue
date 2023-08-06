@@ -6,7 +6,8 @@
         <el-row :gutter="40">
             <el-col :span="12" class="left">
                 <div class="logo text-hidden">
-                    <span class="site-name">{{ siteName }}</span>
+                    <!-- <span class="site-name">{{ siteName }}</span> -->
+                    <span class="site-name">{{ welcomeName }}</span>
                 </div>
                 <div class="version">
                     <div class="num">Version&nbsp;{{ config.version }}</div>
@@ -53,7 +54,8 @@
     let closeShow = ref(false);
 
     // 站点链接
-    let siteName = import.meta.env.VITE_SITE_NAME;
+    // let siteName = import.meta.env.VITE_SITE_NAME;
+    let welcomeName = import.meta.env.VITE_WELCOME_NAME;
 
     // 更新日志
     let updateRecords = reactive({

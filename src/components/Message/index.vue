@@ -3,9 +3,10 @@
     <div class="message">
         <!-- Logo -->
         <div class="logo">
-            <img class="logo-img" :src="siteLogo" alt="logo" />
+            <!-- <img class="logo-img" :src="siteLogo" alt="logo" /> -->
             <div class="name text-hidden">
-                <span class="site-name">{{ siteName }}</span>
+                <!-- <span class="site-name">{{ siteName }}</span> -->
+                <span class="site-name">{{ welcomeName }}</span>
             </div>
         </div>
         <!-- 简介 -->
@@ -39,7 +40,8 @@
     // 站点logo
     let siteLogo = import.meta.env.VITE_SITE_LOGO;
     // 站点名称
-    let siteName = import.meta.env.VITE_SITE_NAME;
+    // let siteName = import.meta.env.VITE_SITE_NAME;
+    let welcomeName = import.meta.env.VITE_WELCOME_NAME;
 
     // 简介区域文字
     let descriptionText = reactive({
@@ -80,8 +82,10 @@
                     dailySentence.note = res.note;
 
                     // 设置简介区域文字为每日一句
-                    descriptionText.hello = dailySentence.content;
-                    descriptionText.text = dailySentence.note;
+                    if(!descriptionText.hello){
+                        descriptionText.hello = dailySentence.content;
+                        descriptionText.text = dailySentence.note;
+                    }
                 }
             })
             .catch(() => {

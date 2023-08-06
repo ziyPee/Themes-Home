@@ -9,7 +9,7 @@
             <a v-if="filing.trim() != ''" class="filing hidden" href="https://beian.miit.gov.cn" target="_blank">{{ filing }}</a>
             <!-- 公安备案 -->
             <span v-if="police.trim() != ''" class="police hidden">&nbsp;&amp;&nbsp;</span>
-            <a v-if="police.trim() != ''" class="police hidden" href="https://www.beian.gov.cn/" target="_blank">{{ police }}</a>
+            <a v-if="police.trim() != ''" class="police hidden" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=42018502006751" target="_blank">{{ police }}</a>
         </div>
         <div class="lrc" v-show="store.playerShowLrc && store.playerState">
             <MusicOne theme="filled" size="18" fill="#EFEFEF" />

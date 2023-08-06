@@ -2,7 +2,8 @@
     <div :class="store.mobileOpenState ? 'right' : 'right hidden'">
         <!-- 移动端 Logo -->
         <div class="logo text-hidden" >
-            <span class="site-name">{{ siteName }}</span>
+            <!-- <span class="site-name">{{ siteName }}</span> -->
+            <span class="site-name">{{ welcomeName }}</span>
         </div>
         <!-- 功能区 -->
         <Func />
@@ -18,7 +19,8 @@
     const store = mainStore();
 
     // 站点名称
-    let siteName = import.meta.env.VITE_SITE_NAME;
+    // let siteName = import.meta.env.VITE_SITE_NAME;
+    let welcomeName = import.meta.env.VITE_WELCOME_NAME;
 </script>
 
 

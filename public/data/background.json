@@ -4,7 +4,7 @@
             "name": "默认壁纸",
             "url": "",
             "images": [
-                "/image/background/home.jpg", "/image/background/home.jpeg", "/image/background/back.jpg", "/image/background/back.jpeg"
+                "/image/background/home.jpg"
             ]
         }, {
             "name": "每日一图",
