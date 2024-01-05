@@ -2,7 +2,11 @@
     [{
         "icon": "Blog",
         "name": "博客",
-        "url": "https://notes.worstone.cn/"
+        "url": "https://blog.ziypee.com/"
+    },{
+        "icon": "Robot",
+        "name": "聊天",
+        "url": "https://chatgpt.ziypee.com/"
     }, {
         "icon": "Code",
         "name": "力扣",

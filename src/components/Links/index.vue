@@ -27,7 +27,7 @@
     import { getLocalData } from '@/api';
     import { Icon } from "@vicons/utils";
     import { Error } from "@icon-park/vue-next";
-    import { Blog, Code, Search, CompactDisc, Cloud, Train, Book, Link } from "@vicons/fa";
+    import { Blog, Code, Search, CompactDisc, Cloud, Train, Book, Link, Robot } from "@vicons/fa";
 
     import { Swiper, SwiperSlide } from 'swiper/vue';
     import { Pagination } from 'swiper';
@@ -36,6 +36,7 @@
     // 名称与组件集合
     const collection = {
         "Blog": Blog,
+        "Robot": Robot,
         "Book": Book,
         "Cloud": Cloud,
         "Code": Code,
